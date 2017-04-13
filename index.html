@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<html>
+	<head>
+		<title>BOXING Game</title>
+		<meta charset="utf-8">
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="author" content="Christian Montoya">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div id="contenders">
+				<p>CONTENDERS</p>
+			</div>
+			<div id="thumbsCont">
+				<button class="thumb" id="perrier">
+					<p>Perrier</p>
+					<img src="assets/images/perrier.png" class="thumbImgs" alt="Perrier">
+					<p class="thumbHealth"><span id="health1"><!-- Health Points --></span></p>
+				</button>
+			
+				<button class="thumb" id="boneCrusher">
+					<p>Bone Crusher</p>
+					<img src="assets/images/boneCrusher.png" class="thumbImgs" alt="Bone Crusher">
+					<p class="thumbHealth"><span id="health2"><!-- Health Points --></span></p>
+				</button>
+
+				<button class="thumb" id="dragonLotus">
+					<p>Dragon Lotus</p>
+					<img src="assets/images/dragonLotus.png" class="thumbImgs" alt="Dragon Lotus">
+					<p class="thumbHealth"><span id="health3"><!-- Health Points --></span></p>
+				</button>
+
+				<button class="thumb" id="chops">
+					<p>Chops</p>
+					<img src="assets/images/chops.png" class="thumbImgs" alt="Chops">
+					<p class="thumbHealth"><span id="health4"><!-- Health Points --></span></p>
+				</button>
+				<p id="finalBanner">The Event<br>
+				of the<br>
+				CENTURY</p>
+			</div>
+
+			<div>
+				<div id="boxCtn">
+					<h1>Choose Your Boxer</h1>
+					<button id="boxBtn">BOX</button>
+				</div>
+			</div>
+
+			<div id="ring">
+				<!-- Boxer1 placeholder -->
+				<div class="matBox">
+					<p class="health"><span id="hlthBoxer1"><!-- Health Points --></span><br>
+					Health Points</p>				
+					<div id="boxer1">					
+						<!-- img is placed here dynamically -->
+					</div>
+				</div>
+				<!-- Boxer2 placeholder -->
+				<div class="matBox">
+					<p class="health"><span id="hlthBoxer2"><!--Health Points--></span><br>
+					Health Points</p>					
+					<div id="boxer2">					
+						<!-- img is placed here dynamically -->
+					</div>
+				</div>
+			</div>
+			<div id="bottomPush">
+				<img src="assets/images/Don-King.png" id="donKing" alt="Don King">
+			</div>
+		</div>
+		<audio id="crowd" src="assets/images/crowd.mp3" autoplay>
+        </audio>
+        <audio id="oneRing" src="assets/images/oneRing.mp3">
+        </audio>
+        <audio id="threeRings" src="assets/images/threeRings.mp3">
+        </audio>
+        <audio id="punch" src="assets/images/punch.mp3">
+        </audio>
+        <audio id="punches" src="assets/images/punches.mp3">
+        </audio>
+	</body>
+	<script src="assets/javascript/game.js">
+	</script>
+</html>
