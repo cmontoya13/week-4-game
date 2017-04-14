@@ -3,9 +3,6 @@
 	padding: 0;
 	text-align: center;
 }
-html, body {
-	height: 100%;
-}
 body {
 	background-image: url("../images/donKingBG.jpg");
 	font-family: sans-serif;
@@ -17,13 +14,9 @@ button {
 button:focus {
 	outline: 0;
 }
-.container {
-	height: 100%;
-}
 #contenders {
 	opacity: 0;
 	margin: 20px 0 10px;
-
 }
 #thumbsCont {
 	height: 160px;
@@ -35,8 +28,7 @@ button:focus {
 	border: solid 10px white;
 	border-radius: 5px;
 	margin: 0 10px;
-	display: inline-block;
-	
+	display: inline-block;	
 }
 .thumb:hover {
 	border-color: blue;
@@ -50,8 +42,7 @@ button:focus {
 	border: solid 10px red;
 	border-radius: 5px;
 	margin: 0 10px;
-	display: inline-block;
-	
+	display: inline-block;	
 }
 .thumbRed:hover {
 	background-color: pink;
@@ -121,9 +112,7 @@ p {
 	padding: 20px 70px;
 }
 #bottomPush {
-	background-color: #fff;
 	width: 1024px;
-	height: 200px;
 }
 #donKing {
 	display: none;
