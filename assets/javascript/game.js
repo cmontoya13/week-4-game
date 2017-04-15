@@ -86,6 +86,14 @@ $(document).ready(function() {
 				$("#contenders").css("opacity", "1"); // show 'contenders' message
 				$(".health").css("opacity", "1"); // show 'health' info
 
+				// play Burgess Meredith after first two opponent picks
+				if (counter === 0) {
+			   		$("#wrecking")[0].play();
+			   	}
+			   	else if (counter === 1) {
+			   		$("#lightning")[0].play();
+			   	}
+
 				// check if this is final opponent
 				if (counter > 1) {
 					// timer to display final opponent message
@@ -96,7 +104,8 @@ $(document).ready(function() {
 					}, 1000); // hide voice bubble
 					$("#contenders").css("opacity", "0"); // hide 'contenders' message
 					$("#finalBanner").slideDown("slow"); // show 'Event of the Century' message
-					$("#crowd")[0].play(); // play crowd audio					
+					$("#crowd")[0].play(); // play crowd audio
+					$("#showtime")[0].play(); // play Jimmy Lennon Jr. - "Showtime"					
 				}
 				// timer to delay hiding Don King in case boxer2 quickly selected (leaves voice bubble on screen)
 				else {
@@ -246,7 +255,10 @@ $(document).ready(function() {
 				// check if opponents available
 				if (counter < 3) {
 					// timer to delay message for readability
-					setTimeout(function() {						
+					setTimeout(function() {
+						if (counter === 2) {
+							$("#title")[0].play();
+						}						
 						$("h1").html("Choose Your Next Opponent"); // return H1 innerHTML to original state
 						$("#boxer2").empty("<img>"); // remove boxer2 from ring
 						boxer2Id = undefined; // reset boxer2 variable
